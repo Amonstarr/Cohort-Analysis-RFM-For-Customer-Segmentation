@@ -1,157 +1,148 @@
-Customer Segmentation using Cohort Analysis & RFM
-Project Overview
+# Customer Segmentation using Cohort Analysis & RFM
 
-This project analyzes customer purchasing behavior and retention patterns using Cohort Analysis and RFM (Recency, Frequency, Monetary) segmentation.
+## Project Overview
 
-The objective is to understand customer lifecycle, identify high-value customer segments, and analyze retention trends that can support data-driven business and marketing strategies.
+This project analyzes **customer purchasing behavior and retention patterns** using **Cohort Analysis and RFM (Recency, Frequency, Monetary) segmentation**.
 
-Customer analytics techniques such as Cohort Analysis and RFM segmentation are widely used in industries including e-commerce, SaaS, fintech, and retail.
+The objective is to understand **customer lifecycle, identify high-value customer segments, and analyze retention trends** that can support **data-driven business and marketing strategies**.
 
-Problem Statement
+Customer analytics techniques such as **Cohort Analysis and RFM segmentation** are widely used in industries including **e-commerce, SaaS, fintech, and retail**.
+
+---
+
+# Problem Statement
 
 Businesses often struggle to understand:
 
-Which customers generate the most revenue
+- Which customers generate the most revenue  
+- How customer purchasing behavior changes over time  
+- Which customers are at risk of churning  
+- How to identify loyal or high-value customers  
 
-How customer purchasing behavior changes over time
+This project aims to answer those questions using **data-driven analysis**.
 
-Which customers are at risk of churning
+---
 
-How to identify loyal or high-value customers
+# Dataset
 
-This project aims to answer those questions using data-driven analysis.
+The dataset contains **transactional customer purchase data**, including:
 
-Dataset
-
-The dataset contains transactional customer purchase data, including:
-
-Customer ID
-
-Invoice Date
-
-Transaction Amount
-
-Purchase Frequency
+- Customer ID  
+- Invoice Date  
+- Transaction Amount  
+- Purchase Frequency  
 
 The dataset was cleaned and processed before performing analysis.
 
-Tools & Technologies
+---
+
+# Tools & Technologies
 
 This project was developed using:
 
-Python
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
+- **Jupyter Notebook**
 
-Pandas
+---
 
-NumPy
+# Project Workflow
 
-Matplotlib
+## 1. Data Understanding
 
-Seaborn
+The dataset was first explored to understand its **structure, variables, and potential data quality issues**.
 
-Jupyter Notebook
+Key steps included:
 
-Project Workflow
-1. Data Understanding
+- Inspect dataset structure  
+- Identify missing values  
+- Understand transaction patterns  
 
-The dataset was first explored to understand its structure, variables, and potential data quality issues.
+---
 
-Key steps:
-
-Inspect dataset structure
-
-Identify missing values
-
-Understand transaction patterns
-
-2. Data Cleaning & Preprocessing
+## 2. Data Cleaning & Preprocessing
 
 Data preprocessing steps included:
 
-Handling missing values
+- Handling missing values  
+- Converting date columns into **datetime format**  
+- Removing invalid or negative transactions  
+- Creating new features for analysis  
 
-Converting date columns into datetime format
+Feature engineering was performed to prepare the dataset for **Cohort Analysis and RFM segmentation**.
 
-Removing invalid or negative transactions
+---
 
-Creating new features for analysis
+## 3. Exploratory Data Analysis (EDA)
 
-Feature engineering was performed to prepare the dataset for cohort and RFM analysis.
-
-3. Exploratory Data Analysis (EDA)
-
-EDA was conducted to explore customer purchasing patterns.
+EDA was conducted to explore **customer purchasing patterns**.
 
 Key analysis included:
 
-Transaction distribution
+- Transaction distribution  
+- Customer purchase frequency  
+- Revenue contribution patterns  
 
-Customer purchase frequency
+EDA helps identify **trends, anomalies, and patterns in customer behavior**.
 
-Revenue contribution patterns
+---
 
-EDA helps identify trends, anomalies, and patterns in customer behavior.
+## 4. Cohort Analysis
 
-4. Cohort Analysis
+Cohort analysis groups customers based on **their first purchase date**.
 
-Cohort analysis groups customers based on their first purchase date.
-
-This allows us to analyze customer retention over time.
+This allows analysis of **customer retention over time**.
 
 Steps performed:
 
-Identify each customer's first purchase month
+- Identify each customer's **first purchase month**
+- Group customers into **cohorts**
+- Calculate **retention rate per cohort**
+- Create a **cohort retention table**
 
-Group customers into cohorts
+This analysis helps businesses understand **customer retention behavior**.
 
-Calculate retention rate per cohort
+---
 
-Create a cohort retention table
-
-This analysis helps businesses understand customer retention behavior.
-
-5. RFM Segmentation
+## 5. RFM Segmentation
 
 RFM segmentation evaluates customers based on three key metrics:
 
-Recency
-
+### Recency
 How recently a customer made a purchase.
 
-Frequency
-
+### Frequency
 How often a customer makes purchases.
 
-Monetary
-
+### Monetary
 How much money a customer spends.
 
 Customers are scored and segmented into groups such as:
 
-High-value customers
+- High-value customers  
+- Loyal customers  
+- Potential loyalists  
+- At-risk customers  
 
-Loyal customers
+This segmentation helps businesses **target marketing strategies more effectively**.
 
-Potential loyalists
+---
 
-At-risk customers
-
-This segmentation helps businesses target marketing strategies more effectively.
-
-Key Insights
+# Key Insights
 
 From the analysis, several insights were identified:
 
-A small percentage of customers contributes a large portion of total revenue.
-
-Customer retention declines significantly after several months.
-
-High-value customers tend to have higher purchase frequency and spending behavior.
+- A **small percentage of customers contributes a large portion of total revenue**.
+- Customer retention **declines significantly after several months**.
+- High-value customers tend to have **higher purchase frequency and spending behavior**.
 
 These insights can help businesses:
 
-Improve customer retention strategies
+- Improve **customer retention strategies**
+- Identify **high-value customer segments**
+- Optimize **marketing campaigns and promotions**
 
-Identify high-value customer segments
-
-Optimize marketing campaigns and promotions
+---
